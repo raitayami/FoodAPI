@@ -12,6 +12,7 @@
 		A3ADAB132B21D8AE00587AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3ADAB122B21D8AE00587AD9 /* Assets.xcassets */; };
 		A3ADAB162B21D8AE00587AD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3ADAB152B21D8AE00587AD9 /* Preview Assets.xcassets */; };
 		A3ADAB1F2B21DB8F00587AD9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */; };
+		A3ADAB222B21EC1900587AD9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADAB212B21EC1900587AD9 /* Search.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		A3ADAB1C2B21D8F100587AD9 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		A3ADAB1D2B21D91C00587AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		A3ADAB212B21EC1900587AD9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,14 @@
 		A3ADAB0D2B21D8A900587AD9 /* FoodAPI */ = {
 			isa = PBXGroup;
 			children = (
+				A3ADAB1C2B21D8F100587AD9 /* Config.xcconfig */,
 				A3ADAB1D2B21D91C00587AD9 /* Info.plist */,
+				A3ADAB202B21EBE900587AD9 /* Model */,
 				A3ADAB0E2B21D8A900587AD9 /* FoodAPIApp.swift */,
 				A3ADAB102B21D8A900587AD9 /* ContentView.swift */,
+				A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */,
 				A3ADAB122B21D8AE00587AD9 /* Assets.xcassets */,
 				A3ADAB142B21D8AE00587AD9 /* Preview Content */,
-				A3ADAB1C2B21D8F100587AD9 /* Config.xcconfig */,
-				A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */,
 			);
 			path = FoodAPI;
 			sourceTree = "<group>";
@@ -72,6 +75,14 @@
 				A3ADAB152B21D8AE00587AD9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A3ADAB202B21EBE900587AD9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3ADAB212B21EC1900587AD9 /* Search.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3ADAB1F2B21DB8F00587AD9 /* DataService.swift in Sources */,
+				A3ADAB222B21EC1900587AD9 /* Search.swift in Sources */,
 				A3ADAB112B21D8A900587AD9 /* ContentView.swift in Sources */,
 				A3ADAB0F2B21D8A900587AD9 /* FoodAPIApp.swift in Sources */,
 			);

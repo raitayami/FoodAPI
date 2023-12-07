@@ -11,11 +11,11 @@ struct DataService {
     
     let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String
     
-    func getData() async {
+    func getData() async -> [Food]{
         
         
         guard apiKey != nil else {
-            return
+            return [Food]()
         }
         
         if let url = URL(string: "https://api.spoonacular.com/recipes/complexSearch"){
@@ -25,14 +25,18 @@ struct DataService {
             request.addValue("\(apiKey ?? "error")", forHTTPHeaderField: "x-api-key")
             
             do{
-                let (data, response) = try await URLSession.shared.data(for: request)
-                print(data)
-                print(response)
+                let (data, _) = try await URLSession.shared.data(for: request)
+                
+                let decoder = JSONDecoder()
+                let result = try decoder.decode(Search.self, from: data)
+                return result.results
             }
             catch{
                 print(error)
             }
         }
+        
+        return [Food]()
         
     }
     

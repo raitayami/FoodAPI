@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var service = DataService()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -18,7 +21,7 @@ struct ContentView: View {
         .padding()
         .onAppear {
             Task{
-                await DataService().getData()
+                await service.getData()
             }
         }
     }
