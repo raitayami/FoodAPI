@@ -13,6 +13,7 @@
 		A3ADAB162B21D8AE00587AD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3ADAB152B21D8AE00587AD9 /* Preview Assets.xcassets */; };
 		A3ADAB1F2B21DB8F00587AD9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */; };
 		A3ADAB222B21EC1900587AD9 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADAB212B21EC1900587AD9 /* Search.swift */; };
+		A3ADAB242B21F05800587AD9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3ADAB232B21F05800587AD9 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A3ADAB1D2B21D91C00587AD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A3ADAB1E2B21DB8F00587AD9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A3ADAB212B21EC1900587AD9 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		A3ADAB232B21F05800587AD9 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A3ADAB212B21EC1900587AD9 /* Search.swift */,
+				A3ADAB232B21F05800587AD9 /* Food.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				A3ADAB1F2B21DB8F00587AD9 /* DataService.swift in Sources */,
 				A3ADAB222B21EC1900587AD9 /* Search.swift in Sources */,
+				A3ADAB242B21F05800587AD9 /* Food.swift in Sources */,
 				A3ADAB112B21D8A900587AD9 /* ContentView.swift in Sources */,
 				A3ADAB0F2B21D8A900587AD9 /* FoodAPIApp.swift in Sources */,
 			);

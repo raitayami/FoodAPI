@@ -9,20 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var food = [Food]()
     var service = DataService()
     
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-        .onAppear {
-            Task{
-                await service.getData()
+            List(food){ a in
+                Text(a.title ?? "nil")
+                    .foregroundStyle(.black)
+                AsyncImage(url: URL(string: a.image ?? "error"))
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                    
             }
+        }
+        .task{
+            food = await service.getData()
         }
     }
 }

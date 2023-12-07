@@ -29,6 +29,7 @@ struct DataService {
                 
                 let decoder = JSONDecoder()
                 let result = try decoder.decode(Search.self, from: data)
+                
                 return result.results
             }
             catch{

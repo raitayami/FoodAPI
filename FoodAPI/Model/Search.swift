@@ -14,9 +14,3 @@ struct Search: Decodable{
     var totalResults: Int
 }
 
-struct Food: Decodable{
-    var id: Int
-    var title: String
-    var image: String
-    var imageType: String
-}
