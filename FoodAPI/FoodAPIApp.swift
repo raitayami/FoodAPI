@@ -11,7 +11,7 @@ import SwiftUI
 struct FoodAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalorieDisplayView()
         }
     }
 }
